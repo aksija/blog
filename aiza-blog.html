@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/kim.jpg">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+    <title> Aiza's Blog </title>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- First section with one image and text -->
+        <h1> READING : A JOURNEY THAT NEVER ENDS </h1>
+        <i> by : Bilangigue, Aiza Anita A. </i> <br> <br>
+        <div class="col-md-3">
+            <img src="images/aiza1.jpg" alt="Description of the image" class="img-fluid">
+            <div class="button-section">
+                <button id="like1Button" onclick="Like1()"><i class="far fa-thumbs-up fa-lg"></i></button>
+                <button id="heart1Button" onclick="Heart1()"><i class="fas fa-heart fa-lg"></i></button>
+                <button id="wow1Button" onclick="Wow1()"><i class="fas fa-surprise fa-lg"></i></button>
+                <button id="sad1Button" onclick="Sad1()"><i class="far fa-sad-tear fa-lg"></i></button>
+                <button id="angry1Button" onclick="Angry1()"><i class="far fa-angry fa-lg"></i></button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p> Reading Wattpad has multiple benefits for users. It can help people improve their reading skills, 
+                increase their vocabulary, and expose them to new genres and authors. Wattpad also allows users 
+                to connect with other readers and writers around the world, share feedback, and discuss books. 
+                There are many aspects of Wattpad that are really good. One of those is that you get to read the 
+                novels as they are written. On Wattpad, you upload chapter by chapter. I like seeing how an author 
+                can create a story as they go, how they work with loopholes, how they fix those loopholes. And my 
+                favorite to read is about lovestory. We enjoy a good book because we feel what the protagonists is 
+                going through. We share his or her emotions and we try to help them somehow even when we know that 
+                is not possible. When i read i feel secure, capable of doing anything I want, I feel happy. When 
+                I read I forget all my worries and fears I just live the character life making his or her problems 
+                my own and trying to tell them how to act. Books inspire so many people and they make us dream 
+                with a better life because if they can why can't we?</p>
+        </div>
+    </div>
+
+    <!-- Second section with four images -->
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="images/aiza2.jpg" alt="Description of image 1" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src="images/aiza3.jpg" alt="Description of image 2" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+            <img src="images/aiza4.jpg" alt="Description of image 3" class="img-fluid">
+        </div>
+        
+    </div>
+
+    <!-- Third section with one more image -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h1> <i> MY RECOMMENDATIONS WATTPAD STORIES </i> </h1>
+            <img src="images/aiza5.jpg" alt="Description of the another image" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <a href="index.html" class="read_more-btn"><i class="fa-solid fa-house-chimney"></i></a>
+    <a href="aiza-blog.html" class="read-m0re-btn"> Current (Aiza) </a>
+    <a href="kim-blog.html" class="read-more-btn"> Kim's Blog </a>
+    <a href="sj-blog.html" class="read-more-btn"> Susana Jane's Blog </a>
+    <a href="ingeane-blog.html" class="read-more-btn"> Ingeane's Blog </a>
+    <a href="johanna-blog.html" class="read-more-btn"> Johanna's Blog </a>
+    <a href="anafe-blog.html" class="read-more-btn"> Ana Fe's Blog </a>
+</div>
+
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: violet;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .read_more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+
+    .read_more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+
+    .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+    .read-more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+    .read-m0re-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+
+    .activelike {
+        color: blue;
+    }
+
+    .activeheart {
+        color: red;
+    }
+
+    .activewow {
+        color: darkgreen;
+    }
+
+    .activesad {
+        color: darkorange;
+    }
+
+    .activeangry {
+        color: red;
+    }
+</style>
+
+<script>
+    function Like1() {
+        var likeButton = document.getElementById('like1Button');
+        likeButton.classList.toggle('activelike');
+
+        removeActiveClassExcept1('like1Button');
+    }
+
+    function Heart1() {
+        var heartButton = document.getElementById('heart1Button');
+        heartButton.classList.toggle('activeheart');
+
+        removeActiveClassExcept1('heart1Button');
+    }
+
+    function Wow1() {
+        var wowButton = document.getElementById('wow1Button');
+        wowButton.classList.toggle('activewow');
+
+        removeActiveClassExcept1('wow1Button');
+    }
+
+    function Sad1() {
+        var sadButton = document.getElementById('sad1Button');
+        sadButton.classList.toggle('activesad');
+
+        removeActiveClassExcept1('sad1Button');
+    }
+
+    function Angry1() {
+        var angryButton = document.getElementById('angry1Button');
+        angryButton.classList.toggle('activeangry');
+
+        removeActiveClassExcept1('angry1Button');
+    }
+
+    function removeActiveClassExcept1(clickedButtonId) {
+
+        var buttonIds = ['like1Button', 'heart1Button', 'wow1Button', 'sad1Button', 'angry1Button'];
+
+        buttonIds.forEach(function (buttonId) {
+
+            if (buttonId !== clickedButtonId) {
+                var button = document.getElementById(buttonId);
+                button.classList.remove('activelike', 'activeheart', 'activewow', 'activesad', 'activeangry');
+            }
+        });
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

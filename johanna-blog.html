@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Johanna's Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/f6dcf461.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez2HPwKioaCKtv4Wg0U9FKZ6yZUER1MJBhsa1QxOa09I8R5S3tMffXK2KKL2B5Ug" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="johanna-blog.css">
+    <link rel="icon" type="image/x-icon" href="images/johanna.jpg">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="johanna-blog.html" class="navbar-brand"> <img src="images/logo-jp.jpg"> </a>
+                <div class="navbar-nav">
+                    <a href="johanna-blog.html"> <i class="fa-solid fa-house-chimney"></i> Home </a>
+                    <a href="#about-me"> <i class="fa-solid fa-user"></i> About Me </a>
+                    <a href="#faves"> <i class="fa-solid fa-star"></i> Faves </a>
+                    <a href="#gallery"> <i class="fa-solid fa-image"></i> GALLERY </a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <h1 class="banner-title">
+                     WANDERING WITHIN : </span> EXPLORING THE LANDSCAPE OF <span> 'ME, MYSELF & I' </span> 
+                    <p><i> by : Panganuron, Johanna B. </i></p>
+                    <p> some things that you want to know about me </p>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- about me -->
+
+    <section class="about" id="about-me">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <div class="meeee">
+                    <img src="images/me.jpg" alt="">
+                    </div>
+                    <br>
+                    <button id="like1Button" onclick="Like1()"> <i class="fa-solid fa-thumbs-up fa-beat-fade fa-2x"></i></button>
+                    <button id="heart1Button" onclick="Heart1()"> <i class="fa-sharp fa-solid fa-heart fa-beat-fade fa-2x"></i></button>
+                    <button id="wow1Button" onclick="Wow1()"> <i class="fas fa-surprise fa-beat-fade fa-2x"></i></button>
+                    <button id="sad1Button" onclick="Sad1()"> <i class="fa-sharp fa-solid fa-face-sad-tear fa-beat-fade fa-2x"></i></button>
+                    <button id="angry1Button" onclick="Angry1()"> <i class="fa-sharp fa-solid fa-face-angry fa-beat-fade fa-2x"></i></button>
+                </div>
+                <div class="about-text">
+                    <div class="title">
+                        <h2 class="aboutme"> About Me </h2>
+                    </div>
+                    <p class="about-me">
+                        Full Name : Johanna Baguio Panganuron <br>
+                        Age : 19 <br>
+                        Birthday : Secret <br>
+                        Zodiac : Cancer <br>
+                        Sex : Female <br>   
+                        Status : Single <br>
+                        Citizenship : Filipino <br>
+                        Email : johannapanganuron@gmail.com <br>
+                        Cellphone # : 09491280100
+                    </p>
+                    <p class="about-me"> Motto : lahat ng problema may solusyon.
+                        pag walang solusyon,
+                        wag mo nang problemahin. OK ?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of about me -->
+
+    <!-- faves -->
+    <section class="blog" id="faves">
+        <div class="container">
+            <div class="title">
+                <h2> My Top 3 Favorite Foods (UTI Edition) </h2>
+            </div>
+            <div class="blog-content">
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="foodz-img">
+                        <img src="images/food1.jpg" alt="">
+                    </div>                   
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="like01Button" class="food" onclick="Like01()"><i class="fa-sharp fa-solid fa-thumbs-up fa-beat-fade fa-lg"></i> Lke </button>
+                        <button id="heart01Button" class="food" onclick="Heart01()"> <i class="fa-sharp fa-circle-heart fa-spin fa-lg"></i> Love </button>
+                        <button id="haha01Button" class="food" onclick="Haha01()"> <i class="fa-solid fa-face-grin-squint-tears fa-beat fa-lg"></i> Haha </button>
+                        <button id="wow01Button" class="food" onclick="Wow01()"> <i class="fa-solid fa-face-surprise fa-shake fa-lg"></i> Wow </button>
+                        <button id="delicious01Button" class="food" onclick="Delicious01()"><i class="fa-sharp fa-face-smile-tongue fa-bounce fa-lg"></i> Delicious </button>
+                    </div>
+                    <br>
+                        <h2> - JOLLIBEE IS DA BEST TALAGA!😋 </h2>
+                </div>               
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="foodz-img">
+                        <img src="images/food2.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="like02Button" class="food" onclick="Like02()"><i class="fa-sharp fa-solid fa-thumbs-up fa-beat-fade fa-lg"></i> Like </button>
+                        <button id="heart02Button" class="food" onclick="Heart02()"> <i class="fa-sharp fa-circle-heart fa-spin fa-lg"></i> Love </button>
+                        <button id="haha02Button" class="food" onclick="Haha02()"> <i class="fa-solid fa-face-grin-squint-tears fa-beat fa-lg"></i> Haha </button>
+                        <button id="wow02Button" class="food" onclick="Wow02()"> <i class="fa-solid fa-face-surprise fa-shake fa-lg"></i> Wow </button>
+                        <button id="delicious02Button" class="food" onclick="Delicious02()"><i class="fa-sharp fa-face-smile-tongue fa-bounce fa-lg"></i> Delicious </button>                        
+                    </div>
+                    <br>
+                    <h2> - STREET foods, na papuntang STRAIGHT sa LANGIT hahaha!</h2>
+                </div>
+               
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="foodz-img">
+                        <img src="images/food3.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="like03Button" class="food" onclick="Like03()"><i class="fa-sharp fa-solid fa-thumbs-up fa-beat-fade fa-lg"></i> Like </button>
+                        <button id="heart03Button" class="food" onclick="Heart03()"> <i class="fa-sharp fa-circle-heart fa-spin fa-lg"></i> Love </button>
+                        <button id="haha03Button" class="food" onclick="Haha03()"> <i class="fa-solid fa-face-grin-squint-tears fa-beat fa-lg"></i> Haha </button>
+                        <button id="wow03Button" class="food" onclick="Wow03()"> <i class="fa-solid fa-face-surprise fa-shake fa-lg"></i> Wow </button>
+                        <button id="delicious03Button" class="food" onclick="Delicious03()"><i class="fa-sharp fa-face-smile-tongue fa-bounce fa-lg"></i> Delicious </button>
+                    </div>
+                    <br>
+                    <h2> - eyyy somay rays somay rays with PANCIT CANTON ~ 🌶️🔥</h2>
+                </div>                
+                <!-- item -->                         
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="faves">
+        <div class="container">
+            <div class="title">
+                <h2> 3 things that I will do when I'm bored </h2>
+            </div>
+            <div class="blog-content">
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="bored-img">
+                        <img src="images/bored1.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="Emoji1Button" onclick="Emoji1()"> <i class="fa-regular fa-thumbs-up fa-shake fa-lg"></i> </button>
+                        <button id="Emoji2Button" onclick="Emoji2()"> <i class="fa-regular fa-heart fa-shake fa-lg"></i> </button>
+                        <button id="Emoji3Button" onclick="Emoji3()"> <i class="fa-sharp fa-regular fa-face-laugh-squint fa-shake fa-lg"></i></button>
+                        <button id="Emoji4Button" onclick="Emoji4()"> <i class="fa-light fa-face-hushed fa-shake fa-lg"></i> </button>
+                        <button id="Emoji5Button" onclick="Emoji5()"> <i class="fa-regular fa-face-smile-beam fa-shake fa-lg"></i></button>
+                    </div>
+                    <h2> - WALKING, walk lng ng walk hantod maabot bisag asa hahaha! </h2>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="bored-img">
+                        <img src="images/bored2.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="Emoji01Button" onclick="Emoji01()"> <i class="fa-regular fa-thumbs-up fa-shake fa-lg"></i> </button>
+                        <button id="Emoji02Button" onclick="Emoji02()"> <i class="fa-regular fa-heart fa-shake fa-lg"></i> </button>
+                        <button id="Emoji03Button" onclick="Emoji03()"> <i class="fa-sharp fa-regular fa-face-laugh-squint fa-shake fa-lg"></i></button>
+                        <button id="Emoji04Button" onclick="Emoji04()"> <i class="fa-light fa-face-hushed fa-shake fa-lg"></i> </button>
+                        <button id="Emoji05Button" onclick="Emoji05()"> <i class="fa-regular fa-face-smile-beam fa-shake fa-lg"></i></button>
+                    </div>
+                    <h2> - BIKE, while ga Music AirPods 😎 </h2>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="bored-img">
+                        <img src="images/bored3.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="reactions-btns">
+                        <button id="Emoji001Button" onclick="Emoji001()"> <i class="fa-regular fa-thumbs-up fa-shake fa-lg"></i> </button>
+                        <button id="Emoji002Button" onclick="Emoji002()"> <i class="fa-regular fa-heart fa-shake fa-lg"></i> </button>
+                        <button id="Emoji003Button" onclick="Emoji003()"> <i class="fa-sharp fa-regular fa-face-laugh-squint fa-shake fa-lg"></i></button>
+                        <button id="Emoji004Button" onclick="Emoji004()"> <i class="fa-light fa-face-hushed fa-shake fa-lg"></i> </button>
+                        <button id="Emoji005Button" onclick="Emoji005()"> <i class="fa-regular fa-face-smile-beam fa-shake fa-lg"></i></button>
+                    </div>
+                    <h2> - TALKING, to the moon haha, I just want to tell to the moon what are my rants of my life :) </h2>
+                </div>
+                <!-- item -->             
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="faves">
+        <div class="container">
+            <div class="title">
+                <h2> My Favorite Western Musicians and their Songs </h2>
+            </div>
+            <div class="blog-content">
+                <!-- item -->
+                <div class="blog-item">                  
+                    <div class="blog-img">
+                        <img src="images/jc.jpg" alt="">
+                    </div>
+                    <div class="blog-text">
+                    <h2> Juice WRLD </h2>                                 
+                   1.) All Girls Are The Same 
+                   <br>
+                   2.) Lucid Dreams
+                </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/ts.jpg" alt="">
+                    </div>
+                    <div class="blog-text">
+                        <h2> Taylor Swift </h2>                                 
+                       1.) Enchanted
+                       <br>
+                       2.) Shake it Off
+                       <br>
+                       3.) Lover
+                       <br>
+                       4.) Daylight
+                       <br>
+                       5.) Midnight Rain 
+                       <br>
+                       6.) Shake it Off
+                       <br>
+                       7.) Cruel Summer
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/pm.jpg" alt="">
+                    </div>                   
+                    <div class="blog-text">
+                        <h2> Post Malone </h2>                                 
+                       1.) Better Now
+                       <br>
+                       2.) Psycho
+                       <br>
+                       3.) Congratulations
+                       <br>
+                       4.) Sunflower 
+                    </div>
+                </div>
+                <!-- item -->   
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/fw.jpg" alt="">
+                    </div>                   
+                    <div class="blog-text">
+                        <h2> Fetty Wap </h2>                                 
+                       1.) Trap Queen
+                       <br>
+                       2.) Nobody's Better
+                       <br>
+                       3.) 679
+                       <br>
+                       4.) My Way
+                    </div>
+                </div>
+                <!-- item -->  
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/kh.jpg" alt="">
+                    </div>                   
+                    <div class="blog-text">
+                        <h2> Khalid </h2>                                 
+                       1.) Location
+                       <br>
+                       2.) Young Dumb & Broke
+                       <br>
+                       3.) Better  
+                       <br>
+                       4.) OTW                
+                    </div>
+                </div>
+                <!-- item -->  
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/jb.jpg" alt="">
+                    </div>                   
+                    <div class="blog-text">
+                        <h2> Justin Bieber </h2>                                 
+                       1.) Ghost
+                       <br>
+                       2.) Beauty and a Beat
+                       <br>
+                       3.) What Do You Mean ?  
+                       <br>
+                       4.) Love Yourself                
+                    </div>
+                </div>
+                <!-- item -->                         
+            </div>
+        </div>
+    </section>
+ <!-- mah homies -->
+
+ <section class="homies">
+    <div class="container">
+        <div class="about-content">
+            <div class="home">
+                <img src="images/bp.jfif" alt="">
+            </div>
+            <div class="about-text">
+                <div class="title">
+                    <h2> ♡ MAH HOMIES ♡ </h2>
+                    <p> BLACKPINK IN YOUR AREA! </p>
+                </div>
+     
+                <p> I'm a fan of BLACKPINK since July 2021, they are incredibly talented, with powerful vocals 
+                    and impressive choreography. The four members of the group each bring something unique 
+                    to the table, from Jennie’s strong rapping to Lisa’s energetic dancing 
+                    <span id="dots">...</span><span id="more"> Blackpink’s music 
+                    is catchy and uplifting, making them a great group to listen to if you’re looking for 
+                    a pick-me-up. They also have a strong message of female empowerment, which resonates 
+                    with fans of all ages. My BIAS is JENNIE. All in all, Blackpink is my ULTIMATE FAVE. 💕</span>
+                    <button onclick="myFunction()" id="myBtn">Read more</button></p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- end of mah homies -->
+
+    <!-- galery start -->
+    
+    <section class="blog" id="gallery">
+        <div class="container">
+            <div class="title">
+                <h2> 🌅 | 🌇 </h2>
+            </div>
+            <div class="blog-content">
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp1.jpg" alt="">
+                    </div> <br>
+                    <i> 📍Catarman Sea, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like2Button" onclick="Like2()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart2Button" onclick="Heart2()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha2Button" onclick="Haha2()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad2Button" onclick="Sad2()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry2Button" onclick="Angry2()""> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp2.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like3Button" onclick="Like3()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart3Button" onclick="Heart3()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha3Button" onclick="Haha3()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad3Button" onclick="Sad3()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry3Button" onclick="Angry3()""> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp3.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like4Button" onclick="Like4()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart4Button" onclick="Heart4()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha4Button" onclick="Haha4()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad4Button" onclick="Sad4()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry4Button" onclick="Angry4()""> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp4.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like5Button" onclick="Like5()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart5Button" onclick="Heart5()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha5Button" onclick="Haha5()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad5Button" onclick="Sad5()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry5Button" onclick="Angry5()""> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp5.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like6Button" onclick="Like6()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart6Button" onclick="Heart6()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha6Button" onclick="Haha6()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad6Button" onclick="Sad6()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry6Button" onclick="Angry6()"> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp6.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like7Button" onclick="Like7()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart7Button" onclick="Heart7()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha7Button" onclick="Haha7()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad7Button" onclick="Sad7()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry7Button" onclick="Angry7()"> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp7.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like8Button" onclick="Like8()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart8Button" onclick="Heart8()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha8Button" onclick="Haha8()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad8Button" onclick="Sad8()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry8Button" onclick="Angry8()"> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp8.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu</i> <br>
+                    <div class="reactions-btns">
+                        <button id="like9Button" onclick="Like9()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart9Button" onclick="Heart9()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha9Button" onclick="Haha9()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad9Button" onclick="Sad9()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry9Button" onclick="Angry9()"> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="blog-item">
+                    <div class="gallery-img">
+                        <img src="images/jp9.jpg" alt="">
+                    </div>
+                    <br>
+                    <i> 📍 Dakit-dakit Catarman, Cordova, Cebu </i> <br>
+                    <div class="reactions-btns">
+                        <button id="like10Button" onclick="Like10()"><i class="fa-regular fa-thumbs-up"></i> Like </button>
+                        <button id="heart10Button" onclick="Heart10()"> <i class="fa-regular fa-heart"></i> Heart </button>
+                        <button id="haha10Button" onclick="Haha10()"> <i class="fa-regular fa-face-grin-squint-tears"></i> Haha </button>
+                        <button id="sad10Button" onclick="Sad10()"> <i class="fa-regular fa-face-sad-tear"></i> Sad </button>
+                        <button id="angry10Button" onclick="Angry10()"> <i class="fa-regular fa-face-angry"></i> Angry </button>
+                    </div>
+                </div>
+                <!-- end of item -->            
+            </div>
+        </div>
+    </section>
+<br>
+ <!-- end of gallery -->
+
+    <section>
+        <center>
+    <div class="text-center">
+        <a href="index.html" class="read_more-btn"><i class="fa-solid fa-house-chimney"></i></a>
+        <a href="aiza-blog.html" class="read-more-btn"> Aiza's Blog </a>
+        <a href="kim-blog.html" class="read-more-btn"> Kim's Blog </a>
+        <a href="sj-blog.html" class="read-more-btn"> Susana Jane's Blog </a>
+        <a href="ingeane-blog.html" class="read-more-btn"> Ingeane's Blog </a>
+        <a href="johanna-blog.html" class="read-m0re-btn"> Current (Johanna) </a>
+        <a href="anafe-blog.html" class="read-more-btn"> Ana Fe's Blog </a>
+        <a href="johanna-blog.html" class="read_more-btn"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </center>
+</section>
+
+    <!-- end of blog -->
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/juwanaokay" class="icon-link"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://twitter.com/juwanaxz" class="icon-link"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/juwanaxz" class="icon-link"> <i class="fa-brands fa-square-instagram"></i> </a>
+        </div>
+        <span> PANGANURON, JOHANNA B. </span>
+        <br>
+        <span> B S I T - 2 D </span>        
+    </footer>
+    <script src="johanna.js"> </script>
+</body>
+
+</html>

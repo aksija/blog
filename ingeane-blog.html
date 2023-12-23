@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="images/ingeane2.jpg">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <title> Ingeane's Blog </title>
+</head>
+<body>
+
+<div class="container">
+  <div class="gallery">
+    <img src="images/ingeane.jpg" alt="Image 1">
+    <img src="images/ingeane4.jpg" alt="Image 2">
+    <img src="images/ingeane2.jpg" alt="Image 3">
+    <img src="images/ingeane3.jpg" alt="Image 4">
+    <img src="images/ingeane1.jpg" alt="Image 5">
+    <img src="images/ingeane5.jpg" alt="Image 6">
+  </div>
+  <div class="button-section">
+    <button id="like1Button" onclick="Like1()"><i class="far fa-thumbs-up fa-lg"></i></button>
+    <button id="heart1Button" onclick="Heart1()"><i class="fas fa-heart fa-lg"></i></button>
+    <button id="wow1Button" onclick="Wow1()"><i class="fas fa-surprise fa-lg"></i></button>
+    <button id="sad1Button" onclick="Sad1()"><i class="far fa-sad-tear fa-lg"></i></button>
+    <button id="angry1Button" onclick="Angry1()"><i class="far fa-angry fa-lg"></i></button>
+</div>
+<br>
+  <div class="title"> MY BELOVED HOMETOWN : GILUTONGAN </div>
+  <div class="name">
+  <i> by : Menguito, Ingeane A. </i> <br> <br>
+  </div>
+  <div class="description"> - Gilutongan Island, a pristine oasis nestled in the 
+    embrace of the Cordova Sea, stands as a testament to the unspoiled beauty 
+    that nature graciously bestows upon us. Gilutongan Island's greatest treasure 
+    lies beneath the surface of its crystal-clear waters. The island's charm 
+    extends beyond its natural allure to the warmth of its people and the flavors 
+    of its cuisine. Beyond its natural wonders, Gilutongan Island beckons travelers 
+    to connect with the local culture. Islanders, proud of their heritage, warmly 
+    welcome visitors to partake in traditional dances, share stories, and experience 
+    the rhythms of daily life. </div>
+</div>
+
+<div class="container text-center">
+  <a href="index.html" class="read_more-btn"><i class="fa-solid fa-house-chimney"></i></a>
+  <a href="aiza-blog.html" class="read-more-btn"> Aiza's Blog </a>
+  <a href="kim-blog.html" class="read-more-btn"> Kim's Blog </a>
+  <a href="sj-blog.html" class="read-more-btn"> Susana Jane's Blog </a>
+  <a href="ingeane-blog.html" class="read-m0re-btn"> Current (Ingeane) </a>
+  <a href="johanna-blog.html" class="read-more-btn"> Johanna's Blog </a>
+  <a href="anafe-blog.html" class="read-more-btn"> Ana Fe's Blog </a>
+</div>
+
+<style>
+    body{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("images/bg-ingeane.jpg");
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .read_more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+.read_more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+    .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+    .read-more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+    .read-m0re-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+    }
+    
+    .title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: orange;
+    }
+
+    .name{
+        text-align: center;
+        color: orange;
+    }
+
+    .description {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .button-section {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .activelike {
+        color: blue;
+    }
+
+    .activeheart {
+        color: red;
+    }
+
+    .activewow {
+        color: darkgreen;
+    }
+
+    .activesad {
+        color: darkorange;
+    }
+
+    .activeangry {
+        color: red;
+    }
+</style>
+
+<script>
+    function Like1() {
+        var likeButton = document.getElementById('like1Button');
+        likeButton.classList.toggle('activelike');
+
+        removeActiveClassExcept1('like1Button');
+    }
+
+    function Heart1() {
+        var heartButton = document.getElementById('heart1Button');
+        heartButton.classList.toggle('activeheart');
+
+        removeActiveClassExcept1('heart1Button');
+    }
+
+    function Wow1() {
+        var wowButton = document.getElementById('wow1Button');
+        wowButton.classList.toggle('activewow');
+
+        removeActiveClassExcept1('wow1Button');
+    }
+
+    function Sad1() {
+        var sadButton = document.getElementById('sad1Button');
+        sadButton.classList.toggle('activesad');
+
+        removeActiveClassExcept1('sad1Button');
+    }
+
+    function Angry1() {
+        var angryButton = document.getElementById('angry1Button');
+        angryButton.classList.toggle('activeangry');
+
+        removeActiveClassExcept1('angry1Button');
+    }
+
+    function removeActiveClassExcept1(clickedButtonId) {
+
+        var buttonIds = ['like1Button', 'heart1Button', 'wow1Button', 'sad1Button', 'angry1Button'];
+
+        buttonIds.forEach(function (buttonId) {
+
+            if (buttonId !== clickedButtonId) {
+                var button = document.getElementById(buttonId);
+                button.classList.remove('activelike', 'activeheart', 'activewow', 'activesad', 'activeangry');
+            }
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

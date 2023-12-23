@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/kim.jpg">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+    <title> Kim's Blog </title>
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-5">
+        <h1> COOKING CHRONICLES : A SIMPLE LIFE IN THE KITCHEN </h1>
+        <i> by : Inoc, Kim V. </i> <br> <br>
+        <div class="button-section">
+            <button id="like1Button" onclick="Like1()"><i class="far fa-thumbs-up fa-lg"></i></button>
+            <button id="heart1Button" onclick="Heart1()"><i class="fas fa-heart fa-lg"></i></button>
+            <button id="wow1Button" onclick="Wow1()"><i class="fas fa-surprise fa-lg"></i></button>
+            <button id="sad1Button" onclick="Sad1()"><i class="far fa-sad-tear fa-lg"></i></button>
+            <button id="angry1Button" onclick="Angry1()"><i class="far fa-angry fa-lg"></i></button>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6 my-2">
+                <img src="images/kim.jpg" alt="Image 1" class="img-fluid">
+            </div>
+            <div class="col-md-6 my-2">
+                <img src="images/kim2.jpg" alt="Image 2" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center text-white my-4">
+                <p> - Cooking is a highly creative hobby to take up. You can create your own dishes, 
+                    tweak well known recipes, blend your favourite cuisines, your creative juices 
+                    will be in full flow. You can pick your own ingredients and do as you please, 
+                    you can, mash, blend, boil, roast, dice, slice them, it's your choice. I love 
+                    to cook because cooking has opened my eyes, heart, and stomach up to a lot of 
+                    different foods that I thought I would never like or make. I never thought I 
+                    would like Brussel sprouts, kale, and arugula , but I do! Cooking and food has 
+                    motivated me to try different cuisines, foods, ingredients, and just be a little 
+                    more opened and less picky. I love to cook is because it allows me to do things 
+                    for others When I make a meal for others and see the satisfaction in their faces, 
+                    it makes me feel delighted. Another reason I love to cook is because I love the 
+                    different expressions my friends and family make when I ask them to taste my food.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <img src="images/kim3.jpg" alt="Image 3" class="img-fluid">
+            </div>
+            <div class="col-md-4 my-2">
+                <img src="images/kim4.jpg" alt="Image 4" class="img-fluid">
+            </div>
+            <div class="col-md-4 my-2">
+                <img src="images/kim5.jpg" alt="Image 5" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container text-center">
+    <a href="index.html" class="read_more-btn"><i class="fa-solid fa-house-chimney"></i></a>
+    <a href="aiza-blog.html" class="read-more-btn"> Aiza's Blog </a>
+    <a href="kim-blog.html" class="read-m0re-btn"> Current (Kim) </a>
+    <a href="sj-blog.html" class="read-more-btn"> Susana Jane's Blog </a>
+    <a href="ingeane-blog.html" class="read-more-btn"> Ingeane's Blog </a>
+    <a href="johanna-blog.html" class="read-more-btn"> Johanna's Blog </a>
+    <a href="anafe-blog.html" class="read-more-btn"> Ana Fe's Blog </a>
+    </div>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.read_more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+.read_more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: pink;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+
+.read-more-btn:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+
+.read-m0re-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+
+.top-images,
+.bottom-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.activelike {
+        color: blue;
+    }
+
+    .activeheart {
+        color: red;
+    }
+
+    .activewow {
+        color: darkgreen;
+    }
+
+    .activesad {
+        color: darkorange;
+    }
+
+    .activeangry {
+        color: red;
+    }
+
+</style>
+
+    <script>
+        function Like1() {
+            var likeButton = document.getElementById('like1Button');
+            likeButton.classList.toggle('activelike');
+    
+            removeActiveClassExcept1('like1Button');
+        }
+    
+        function Heart1() {
+            var heartButton = document.getElementById('heart1Button');
+            heartButton.classList.toggle('activeheart');
+    
+            removeActiveClassExcept1('heart1Button');
+        }
+    
+        function Wow1() {
+            var wowButton = document.getElementById('wow1Button');
+            wowButton.classList.toggle('activewow');
+    
+            removeActiveClassExcept1('wow1Button');
+        }
+    
+        function Sad1() {
+            var sadButton = document.getElementById('sad1Button');
+            sadButton.classList.toggle('activesad');
+    
+            removeActiveClassExcept1('sad1Button');
+        }
+    
+        function Angry1() {
+            var angryButton = document.getElementById('angry1Button');
+            angryButton.classList.toggle('activeangry');
+    
+            removeActiveClassExcept1('angry1Button');
+        }
+    
+        function removeActiveClassExcept1(clickedButtonId) {
+    
+            var buttonIds = ['like1Button', 'heart1Button', 'wow1Button', 'sad1Button', 'angry1Button'];
+    
+            buttonIds.forEach(function (buttonId) {
+    
+                if (buttonId !== clickedButtonId) {
+                    var button = document.getElementById(buttonId);
+                    button.classList.remove('activelike', 'activeheart', 'activewow', 'activesad', 'activeangry');
+                }
+            });
+        }
+    </script>
+    <!-- Bootstrap JS and Popper.js scripts (required for Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
